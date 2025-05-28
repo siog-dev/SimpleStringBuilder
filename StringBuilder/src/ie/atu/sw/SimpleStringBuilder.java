@@ -15,8 +15,8 @@ public class SimpleStringBuilder {
 	
 	public static void main(String[] args) {
 		// Create an instance of the class using the null constructor
-		SimpleStringBuilder ssb = new SimpleStringBuilder("THEQUICKBROWNFOXJUMPSOVERTHELAZYDOG");
-		
+		SimpleStringBuilder ssb = new SimpleStringBuilder("THEQUICKBROWNFOXJUMPS");
+		sbb.append("OVERTHELAZYDOG"); // Append end of sentence efficiently
 		//Print out the string builder
 		System.out.println(ssb.toString()); // Convert to string representation
 		System.out.println(ssb.reverse());
