@@ -12,11 +12,23 @@ public class SimpleStringBuilder {
 	public SimpleStringBuilder(String s) {
 		
 	}
+	// Add methods so that the program will compile
+	public void append(String s) {
+		
+	}
+	// Overload the method - same name, different parameters
+	public void append(char s) {
+		
+	}
+	
+	public String reverse() {
+		return null;
+	}
 	
 	public static void main(String[] args) {
 		// Create an instance of the class using the null constructor
 		SimpleStringBuilder ssb = new SimpleStringBuilder("THEQUICKBROWNFOXJUMPS");
-		sbb.append("OVERTHELAZYDOG"); // Append end of sentence efficiently
+		ssb.append("OVERTHELAZYDOG"); // Append end of sentence efficiently
 		//Print out the string builder
 		System.out.println(ssb.toString()); // Convert to string representation
 		System.out.println(ssb.reverse());
