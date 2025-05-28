@@ -25,14 +25,29 @@ public class SimpleStringBuilder {
 		}
 	}
 	// Overload the method - same name, different parameters
-	public void append(char c) {
+	public void append(char c) { // ALL ROADS LEAD TO ROME
 		// Can append a char
+		ensureCapacity();
 		text[index] = c; // text[ith position] = c
 		index++; // Increment by index++
 	}
 	
 	private void ensureCapacity() {
-		
+		// Do a check
+		// 		if my index is greater than or equal to text.length
+		if (index >= text.length) {
+			// Expand
+			// 		Create a temp char array assigned a new char array (current size plus 1)
+			char[] temp = new char[text.length + 1]; 
+			// Copy
+			//		Loop over the old
+			for (int i = 0; i < text.length; i++) {
+				// insert into the new one
+				temp[i] = text[i];
+			}
+			// Change/reassign
+			text = temp;
+		}
 	}
 	
 	// Loop backwards over the string
