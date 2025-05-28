@@ -31,8 +31,13 @@ public class SimpleStringBuilder {
 		index++; // Increment by index++
 	}
 	
+	// Loop backwards over the string
 	public String reverse() {
-		return null;
+		// Reverse the array, pass to string constructor because we're returning a string
+		char[] temp = new char[text.length]; // Char array should be the same length as text
+		
+		// Return a string and pass it the char array
+		return new String(temp);
 	}
 	
 	public static void main(String[] args) {
