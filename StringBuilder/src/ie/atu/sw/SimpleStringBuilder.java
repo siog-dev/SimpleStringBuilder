@@ -58,7 +58,7 @@ public class SimpleStringBuilder {
 	public static void main(String[] args) {
 		SimpleStringBuilder ssb = new SimpleStringBuilder("THEQUICKBROWNFOXJUMPS");
 		ssb.append("OVERTHELAZYDOG");
-		System.out.println(ssb.toString());
+		System.out.println(ssb);
 		System.out.println(ssb.reverse());
 	}
 }
