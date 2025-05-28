@@ -19,11 +19,13 @@ public class SimpleStringBuilder {
 	}
 	// Add methods so that the program will compile
 	public void append(String s) {
-		
+		// Cannot append a string to the end of the instance var
 	}
 	// Overload the method - same name, different parameters
-	public void append(char s) {
-		
+	public void append(char c) {
+		// Can append a char
+		text[index] = c; // text[ith position] = c
+		index++; // Increment index by ++
 	}
 	
 	public String reverse() {
