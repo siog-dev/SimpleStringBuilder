@@ -15,6 +15,7 @@ public class SimpleStringBuilder {
 		
 		//Print out the string builder
 		System.out.println(ssb.toString()); // Convert to string representation
+		System.out.println(ssb.reverse());
 	}
 	
 }
