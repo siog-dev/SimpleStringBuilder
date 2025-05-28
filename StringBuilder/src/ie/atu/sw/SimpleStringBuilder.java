@@ -27,7 +27,7 @@ public class SimpleStringBuilder {
 	
 	private void ensureCapacity() {
 		if (index >= text.length) {
-			char[] temp = new char[text.length + 1]; 
+			char[] temp = new char[text.length + 1];
 
 			for (int i = 0; i < text.length; i++) {
 				temp[i] = text[i];
@@ -38,14 +38,14 @@ public class SimpleStringBuilder {
 	}
 	
 	public String reverse() {
-		char[] temp = new char[text.length];
+		char[] temp = new char[index];
 		
 		int currentIndex = 0;
 		for (int i = index - 1; i >= 0; i--) {
-			temp[currentIndex] = temp[i];
+			temp[currentIndex] = text[i];
 			currentIndex++;
 		}
-		
+
 		return new String(temp);
 	}
 	
