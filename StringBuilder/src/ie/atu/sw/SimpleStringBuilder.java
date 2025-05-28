@@ -14,6 +14,7 @@ public class SimpleStringBuilder {
 	public SimpleStringBuilder(String s) {
 		// Initialise the constructor public SimpleStringBuilder()
 		this(); // Call the constructor that takes no parameters
+		append(s);
 	}
 	// Add methods so that the program will compile
 	public void append(String s) {
