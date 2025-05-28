@@ -19,13 +19,16 @@ public class SimpleStringBuilder {
 	}
 	// Add methods so that the program will compile
 	public void append(String s) {
-		// Cannot append a string to the end of the instance var
+		// Loop over each char in String s and pass each char to append(char c)
+		for (int i = 0; i < s.length(); i++) {
+			append(s.charAt(i));
+		}
 	}
 	// Overload the method - same name, different parameters
 	public void append(char c) {
 		// Can append a char
 		text[index] = c; // text[ith position] = c
-		index++; // Increment index by ++
+		index++; // Increment by index++
 	}
 	
 	public String reverse() {
