@@ -8,7 +8,8 @@ public class SimpleStringBuilder {
 	}
 	
 	public static void main(String[] args) {
-		
+		// Create an instance of the class using the null constructor
+		SimpleStringBuilder ssb = new SimpleStringBuilder();
 	}
 	
 }
