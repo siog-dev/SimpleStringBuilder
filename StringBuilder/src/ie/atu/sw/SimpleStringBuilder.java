@@ -36,6 +36,11 @@ public class SimpleStringBuilder {
 		// Reverse the array, pass to string constructor because we're returning a string
 		char[] temp = new char[text.length]; // Char array should be the same length as text
 		
+		// Loop for reversing the array
+		for (int i = index - 1; i >= 0; i--) {
+			
+		}
+		
 		// Return a string and pass it the char array
 		return new String(temp);
 	}
