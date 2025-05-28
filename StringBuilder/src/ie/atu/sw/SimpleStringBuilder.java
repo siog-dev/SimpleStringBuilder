@@ -31,6 +31,10 @@ public class SimpleStringBuilder {
 		index++; // Increment by index++
 	}
 	
+	private void ensureCapacity() {
+		
+	}
+	
 	// Loop backwards over the string
 	public String reverse() {
 		// Reverse the array, pass to string constructor because we're returning a string
