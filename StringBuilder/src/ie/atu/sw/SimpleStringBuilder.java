@@ -58,6 +58,15 @@ public class SimpleStringBuilder {
 	public static void main(String[] args) {
 		SimpleStringBuilder ssb = new SimpleStringBuilder("THEQUICKBROWNFOXJUMPS");
 		ssb.append("OVERTHELAZYDOG");
+		
+		// Write a loop
+		int counter = 32; // Where ascii ctrl chars stop
+		while (counter <= 20_000) {
+			ssb.append((char)counter);
+			counter++;
+		}
+		
+		
 		System.out.println(ssb);
 		System.out.println(ssb.reverse());
 	}
