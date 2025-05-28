@@ -8,10 +8,12 @@ public class SimpleStringBuilder {
 	public SimpleStringBuilder() {
 	// Need to give it an initial capacity - how long is a piece of string?
 		text = new char[4]; // 4 is a nice power of two - it'll do!
+		
 	}
 	// Create a constructor that takes a string
 	public SimpleStringBuilder(String s) {
-		
+		// Initialise the constructor public SimpleStringBuilder()
+		this(); // Call the constructor that takes no parameters
 	}
 	// Add methods so that the program will compile
 	public void append(String s) {
