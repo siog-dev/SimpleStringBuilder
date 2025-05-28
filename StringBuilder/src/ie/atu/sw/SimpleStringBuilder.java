@@ -1,5 +1,7 @@
 package ie.atu.sw;
 
+import java.util.Arrays;
+
 public class SimpleStringBuilder {
 	private char[] text = null;
 	private int index = 0;
@@ -49,6 +51,10 @@ public class SimpleStringBuilder {
 		return new String(temp);
 	}
 	
+	public String toString() {
+		return new String(text);
+	}
+
 	public static void main(String[] args) {
 		SimpleStringBuilder ssb = new SimpleStringBuilder("THEQUICKBROWNFOXJUMPS");
 		ssb.append("OVERTHELAZYDOG");
