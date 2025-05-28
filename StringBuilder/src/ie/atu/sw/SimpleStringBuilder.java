@@ -29,7 +29,7 @@ public class SimpleStringBuilder {
 	
 	private void ensureCapacity() {
 		if (index >= text.length) {
-			char[] temp = new char[text.length + 1];
+			char[] temp = new char[text.length * 2];
 
 			for (int i = 0; i < text.length; i++) {
 				temp[i] = text[i];
