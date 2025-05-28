@@ -6,7 +6,8 @@ public class SimpleStringBuilder {
 	
 	// Create a null constructor
 	public SimpleStringBuilder() {
-		
+	// Need to give it an initial capacity - how long is a piece of string?
+		text = new char[4]; // 4 is a nice power of two - it'll do!
 	}
 	// Create a constructor that takes a string
 	public SimpleStringBuilder(String s) {
