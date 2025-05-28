@@ -37,8 +37,11 @@ public class SimpleStringBuilder {
 		char[] temp = new char[text.length]; // Char array should be the same length as text
 		
 		// Loop for reversing the array
+		int currentIndex = 0;
+		// Start at zero
 		for (int i = index - 1; i >= 0; i--) {
-			
+			temp[]
+			currentIndex++;
 		}
 		
 		// Return a string and pass it the char array
