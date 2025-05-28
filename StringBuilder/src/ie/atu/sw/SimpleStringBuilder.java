@@ -40,7 +40,8 @@ public class SimpleStringBuilder {
 		int currentIndex = 0;
 		// Start at zero
 		for (int i = index - 1; i >= 0; i--) {
-			temp[]
+			// Insert into currentIndex the character at index i in text
+			temp[currentIndex] = temp[i];
 			currentIndex++;
 		}
 		
