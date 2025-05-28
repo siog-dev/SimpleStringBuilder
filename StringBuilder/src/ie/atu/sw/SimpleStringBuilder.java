@@ -1,6 +1,8 @@
 package ie.atu.sw;
 
 public class SimpleStringBuilder {
+	private char[] text; // Char = 2 byte/16 bits - use to represent unicode
+	private int index; // Figure out where we are in the index for operations
 	
 	// Create a null constructor
 	public SimpleStringBuilder() {
